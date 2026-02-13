@@ -6,7 +6,6 @@ const terminalIterface = readline.createInterface({
 });
 
 /**
- * Faz uma pergunta no terminal
  * @param {string} question
  * @returns {Promise<string>}
  */
@@ -18,7 +17,6 @@ function fazerUmaPerguntar (pergunta) {
 }
 
 /**
- * Solicita um valor numérico validado
  * @param {string} message
  * @returns {Promise<number>}
  */
@@ -35,9 +33,6 @@ async function NotaDeCadaAvaliacao(message) {
     }
 }
 
-/**
- * Executa o calculo principal
- */
 async function executar () {
     console.log("\n===== CALCULO DE PERCENTAGEM DO ALUNO =====\n");
 
@@ -68,8 +63,8 @@ async function executar () {
 
     console.log("\n===== RESULTADO =====");
     console.log(`Total das notas: ${somaDasNotas}`);
-    console.log(`Media do alumo: ${resuladoDaSoma.toFixed(2)}`);
-    console.log(`Percentagem dinal do aluno: ${percentualDoAluno.toFixed(2)}%`);
+    console.log(`Media do aluno: ${resuladoDaSoma}`);
+    console.log(`Percentagem final do aluno: ${percentualDoAluno}%`);
 
     terminalIterface.close();
 };
