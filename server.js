@@ -32,6 +32,11 @@ async function iniciarServidor() {
       prefix: "/v1",
     });
 
+    await fastify.register(require('@fastify/cors'), {
+      origin: true
+    })
+
+
     await fastify.listen({ port: 3000 });
 
     console.log("Servidor rodando em http://localhost:3000");
