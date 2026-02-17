@@ -21,7 +21,7 @@ O serviço expõe uma API HTTP com um endpoint `/v1/calcular-percentagem` que ac
 ## Estrutura do Projeto
 
 ```
-index.js                # Versão CLI antiga (comentada)
+index.js                # Versão CLI ( para uso no terminal )
 server.js               # Inicializa o servidor Fastify e configura plugins
 package.json
 README.md
