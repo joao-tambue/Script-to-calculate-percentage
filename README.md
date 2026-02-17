@@ -125,7 +125,24 @@ Os valores resultantes são retornados na mesma ordem em que os alunos foram env
 
 ## Testes e CLI (legado)
 
-O arquivo `index.js` contém um protótipo de CLI para rodar o cálculo no terminal. Está todo comentado, mas pode ser usado como base para construir testes manuais ou automatizados.
+O arquivo `index.js` contém um protótipo de CLI para rodar o cálculo no terminal. No `package.js` o script já esta configurado para rodar no CLI :
+  ```json
+{
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js" // se for para rodar a API é so mudar para `node server.js`
+  },
+}
+```
+Também pode ser usado como base para construir testes manuais ou automatizados.
+
+## Como executar no CLI
+
+Rode no terminal com:
+
+```bash
+npm start
+```
 
 ---
 

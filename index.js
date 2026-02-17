@@ -6,7 +6,7 @@ const terminalInterface = readline.createInterface({
 });
 
 /**
- * Faz uma pergunta no terminal
+ * Permite com que as perguntas sejam feitas de forma assíncrona usando Promises
  * @param {string} pergunta
  * @returns {Promise<string>}
  */
@@ -34,16 +34,10 @@ async function obterNotaValida(mensagem) {
   }
 }
 
-/**
- * Calcula percentagem individual
- */
 function calcularPercentagem(mediaDoAluno, percentualPorIntegrante) {
   return (mediaDoAluno * percentualPorIntegrante) / 20;
 }
 
-/**
- * Renderiza tabela no terminal
- */
 function imprimirTabela(alunos) {
   console.log("\n===== RESULTADO FINAL =====\n");
 
