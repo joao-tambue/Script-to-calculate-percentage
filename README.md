@@ -18,7 +18,7 @@ O serviço expõe uma API HTTP com um endpoint `/v1/calcular-percentagem` que ac
 
 ---
 
-## 🛠 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 index.js                # Versão CLI antiga (comentada)
