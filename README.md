@@ -137,4 +137,4 @@ O arquivo `index.js` contém um protótipo de CLI para rodar o cálculo no termi
 
 ---
 
-📝 *Criado em fevereiro de 2026 por projeto de algoritmos TREI.*
+📝 *Criado com ❤ pelo João Tambue.*

@@ -4,7 +4,6 @@ const {
 } = require("../domain/aluno.domain");
 
 /**
- * Executa o cálculo da percentagem do grupo
  * @param {Array<object>} alunos
  * @returns {Array<object>}
  */

@@ -1,5 +1,4 @@
 /**
- * Calcula média do aluno
  * @param {object} aluno
  * @returns {number}
  */
@@ -14,7 +13,6 @@ function calcularMediaDoAluno(aluno) {
 }
 
 /**
- * Calcula percentagem final
  * @param {number} mediaDoAluno
  * @param {number} percentualPorIntegrante
  * @returns {number}
