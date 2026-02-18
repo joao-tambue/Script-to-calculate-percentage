@@ -32,19 +32,25 @@ async function iniciarServidor() {
       prefix: "/v1",
     });
 
-    await fastify.register(require('@fastify/cors'), {
-      origin: true
-    })
+    await fastify.register(require("@fastify/cors"), {
+      origin: true,
+    });
 
+    const port = Number(process.env.PORT) || 4000;
+    const host = "0.0.0.0";
 
-    await fastify.listen({ port: 4000 });
+    await fastify.listen({
+      port,
+      host,
+    });
 
-    console.log("Servidor rodando em http://localhost:4000");
-    console.log("Swagger disponível em http://localhost:4000/docs");
+    fastify.log.info(`Servidor rodando na porta ${port}`);
+    fastify.log.info(`Documentação disponível em http://${host}:${port}/docs`);
   } catch (erro) {
     fastify.log.error(erro);
     process.exit(1);
   }
 }
+
 
 iniciarServidor();
