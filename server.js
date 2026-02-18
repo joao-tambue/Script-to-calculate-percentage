@@ -37,10 +37,10 @@ async function iniciarServidor() {
     })
 
 
-    await fastify.listen({ port: 3000 });
+    await fastify.listen({ port: 4000 });
 
-    console.log("Servidor rodando em http://localhost:3000");
-    console.log("Swagger disponível em http://localhost:3000/docs");
+    console.log("Servidor rodando em http://localhost:4000");
+    console.log("Swagger disponível em http://localhost:4000/docs");
   } catch (erro) {
     fastify.log.error(erro);
     process.exit(1);
